@@ -13,7 +13,7 @@
 
   <!-- turtlebot3_unity_bringup doesn't belong here because of recursive dependencies -->
 
-  <exec_depend>turtlebot3</exec_depend>
+  <!-- <exec_depend>turtlebot3</exec_depend> -->
 
   <test_depend>ament_cmake_pytest</test_depend>
   <test_depend>ament_lint_auto</test_depend>
