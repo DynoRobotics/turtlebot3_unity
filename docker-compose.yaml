@@ -1,9 +1,9 @@
 version: '3'
 
 services:
-  pepper_dialogflow:
+  turtlebot3_unity:
     network_mode: host
-    image: turtlebot3
+    image: dynorobotics/turtlebot3_unity
     tty: true
-    container_name: turtlebot3
+    container_name: turtlebot3_unity
     command: ros2 launch turtlebot3_unity_bringup bringup.py
