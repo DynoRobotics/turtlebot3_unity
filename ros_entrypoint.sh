@@ -1,13 +1,7 @@
 #!/bin/bash
 set -e
-
-# setup ros2 environment
-file="/opt/turtlebot3_ws/install/setup.bash"
-if [ -f "$file" ]
-then
-  source "$file"
-else
-  source "/opt/turtlebot3_dependencies_ws/install/setup.bash"
-fi
-
+# setup ros environment
+source "$ROS2_WS/install/local_setup.bash"
+source "$DEPENDENCIES_WS/install/local_setup.bash"
+source "$APP_WS/install/local_setup.bash"
 exec "$@"
